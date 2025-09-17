@@ -243,7 +243,7 @@ body {
 }
 
 .delete-btn:hover {
-  background-color: #ff5e5c;
+  background-color: #eb0905d1;
 }
 
 .done-btn {
@@ -252,7 +252,7 @@ body {
 }
 
 .done-btn:hover {
-  background-color: #00a382;
+  background-color: #06ad41;
 }
 
 .done-btn:disabled {
