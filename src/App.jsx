@@ -1,32 +1,48 @@
 
 import './App.css'
 
-import LudoBoard from './LudoBoard'
 
-import { useState } from "react";
+// import LudoBoard from './LudoBoard'
 
-import ToDoList from '../ToDoList';
+// import { useState } from "react";
+
+
+import Lticket from './Lticket';
+
+import Ticket from './Ticket';
+
+import { sum } from './helper';
+
+import Form from './Form';
+
+import CommentsForm from './CommentsForm';
+import Comments from './comments';
+
+import Counter from './Counter';
+
+import Joker from './joker';
+
 
 function App() {
 
-  // const [data, setData] = useState({
-  //   name: 'lovish',
-  //   age: 21
-  // });
+  let winCondition = (ticket) =>{
 
-  // return (
-  //   <>
-  //     <h1>My name is {data.name} and my age is {data.age}</h1>
-  //     <button onClick={() => setData({ ...data, name: 'CWH' })}>Click Me</button>
-  //   </>
-  // )
+    // return ticket.every((num) => num === ticket[0]);
+
+    return sum(ticket)==15
+
+  }
   
-
-
   return (
     <>
      
-      <ToDoList />
+      {/* < Lticket n={3} winCondition={winCondition} /> */}
+
+      {/* <Comments /> */}
+
+      < Joker />
+   
+ 
 
     </>
   )
